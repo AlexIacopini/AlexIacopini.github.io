@@ -1,0 +1,269 @@
+*{
+  margin:0;
+}
+table{
+  width: 100%;
+  border-collapse: separate;
+}
+h3{
+  font-family: "Comic Sans", cursive;
+  font-style: italic;
+  font-size: 25px;
+}
+
+
+.header{
+  background-color: #abdcf1;
+  padding: 20px;
+}
+/* #header1{
+  width: 70%;
+}
+#header2{
+  width: 20%;
+}
+.animation{
+  cursor: url("heart.png"), auto;
+
+  align-items: right;
+
+  animation-name: pulse;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes pulse {
+  0%{
+    transform: scale(.1);
+    border-radius: 100%;
+  }
+  50%{
+    border-radius: 100px 100px 5px 5px;
+  }
+  100%{
+    background-color: lightpink;
+    border-radius: 100px 100px 5px 5px;
+  }
+
+} */
+.navbar{
+  background-color: #6ca4bc;
+  border-radius: 2px;
+  box-shadow: 0px 1px 6px 1px #696969;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  right:0;
+  z-index: 500;
+}
+#navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#navbar li{
+  float: left;
+  padding: 10px 20px;
+}
+#navbar li a{
+  display: block;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+#navbar li a:hover{
+  background-color: #555;
+  color: white;
+}
+#navbar a{
+  font-weight: bold;
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Comic Sans", cursive;
+}
+
+.welcome{
+  background-color: #abdcf1;
+  padding: 15px;
+}
+#welcome tr,td{
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.message{
+  text-align: left;
+  background-color: #dddddd;
+  border: 3px solid black;
+  border-radius: 50px;
+  box-shadow: 0px 3px 15px 1px #545454;
+}
+
+.cv{
+  background-color: #c4e6f5;
+  padding: 15px;
+}
+#stage img:nth-of-type(1) {
+  position: relative;
+  animation-name: changer;
+  animation-delay: 0s;
+  animation-duration: 2.5s;
+  z-index: 2;
+}
+#stage img:nth-of-type(n+2) {
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+@keyframes changer {
+  opacity: 1.0;
+}
+#big-table td{
+  height: 10%;
+  width: 10%;
+}
+#big-table th{
+  /* background-color: yellow; */
+  width: 5%;
+  height: 10%;
+  padding: 5px;
+}
+.education{
+  cursor: pointer;
+  background-color: #d7c7cc;
+  border: 4px solid #cccccc;
+  border-radius: 15px;
+  box-shadow: 0px 2px 14px 1px #545454;
+}
+.education:hover{
+  border: 4px solid #cff5ff;
+}
+.education .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #666;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 10px;
+  position: absolute;
+  z-index: 10;
+}
+.education .popuptext::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 15px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid #666;
+  border-left: none;
+  border-bottom: 5px solid transparent;
+}
+.education .show {
+  visibility: visible;
+}
+
+
+.work{
+  cursor: pointer;
+  background-color: #cad2d4;
+  border: 4px solid #cccccc;
+  border-radius: 20px;
+  box-shadow: 0px 2px 14px 1px #545454;
+}
+.work:hover{
+  border: 4px solid #cff5ff;
+}
+.work .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 10px;
+  position: absolute;
+  z-index: 10;
+}
+.work .popuptext::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 15px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid #555;
+  border-left: none;
+  border-bottom: 5px solid transparent;
+}
+.work .show {
+  visibility: visible;
+}
+
+.extra{
+  cursor: pointer;
+  background-color: #f0f5d8;
+  border: 4px solid #cccccc;
+  border-radius: 30px;
+  box-shadow: 0px 2px 14px 1px #545454;
+}
+.extra:hover{
+  border: 4px solid #cff5ff;
+}
+.extra .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #777;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 10px;
+  position: absolute;
+  z-index: 10;
+}
+.extra .popuptext::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 15px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid #777;
+  border-left: none;
+  border-bottom: 5px solid transparent;
+}
+.extra .show {
+  visibility: visible;
+}
+
+.change{
+  background-color: #81aeb8;
+}
+.hobby{
+  background-color: #abdcf1;
+  padding: 15px;
+}
+#hobby table{
+  border-collapse: collapse;
+}
+#hobby td{
+  border: 3px solid black;
+  border-style: solid none solid none;
+}
+
+.contacts{
+  background-color: #c4e6f5;
+  padding: 15px;
+}
+#contacts table{
+  border-collapse: collapse;
+}
+#contacts td{
+  width: 33%;
+  border: 3px solid black;
+  border-style: none dashed none dashed;
+}

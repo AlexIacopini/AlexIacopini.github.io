@@ -2,17 +2,382 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="index.js"></script> -->
     <title>Alex</title>
   </head>
-  <body>
-    <div class="container">
-      <div class="Top">
-        <p>Hi there</p>
+  <body onload="init()">
+  <!-- <body> -->
+    <div class="container" id="container">
+      <div class="header" id="header">
+        <table>
+          <tr>
+            <td id="header1">
+              <h1>Hello</h1>
+        <div id="cr001" style="position:absolute; left:400px; top:100px;">
+          <div id="stage">
+            <img src="Monster3.png" width="40" height="40">
+            <img src="Monster4.png"width="40" height="40">
+          </div>
+        </div>
+        <div id="cr002" style="position:absolute; left:600px; top:1000px;">
+          <img src="Monster1.png" alt="yo" width="50" height="50">
+        </div>
+
+            </td>
+            <td class="animation" id="header2">
+              <p>animation</p>
+              <img src="plant.png" width="300px" height="350px" alt="plant">
+
+
+              <!-- <div id="stage">
+                <img src="Monster1.0.png" width="210" height="300">
+                <img src="Monster2.0.png" width="210" height="300">
+                <img src="Monster3.png" width="210" height="300">
+                <img src="Monster4.png"width="210" height="300">
+              </div> -->
+            </td>
+          </tr>
+        </table>
       </div>
-      <div class="Middle">
-        <p>This is the middle part</p>
+      <div class="navbar" id="navbar">
+        <ul>
+          <li><a href="#welcome">Welcome</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="#hobby">Hobby</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+
       </div>
+      <div class="welcome" id="welcome">
+        <h3>welcome</h3>
+        <table>
+          <tr>
+            <td>
+              <div>
+                <p>•	Teamwork
+                •	Customer service
+                •	Time-management
+                •	Greeting and meeting customers
+                •	Assistance to speakers
+                •	Event administration
+                •	Information distribution</p>
+
+              </div>
+              <img src="plant.png" width="200px" height="300px" alt="plant">
+            </td>
+            <td class="message">
+              <div>
+                <p>Hi there!</p>
+                <p>If you are reading this, it means that I either:</p>
+                <ul>
+                  <li>Added this link to my job application</li>
+                  <li>Just met you and told you something like "You don't know who I am?
+                    Google it. It's A-L-E-...."</li>
+                  <li>Told you about it as you are my friend already</li>
+                </ul>
+                <p>In any case, this website is just a brief explanaition of who you are
+                dealing with, so you can clearly see who I am and the main things that I have been
+                doing lately.</p>
+                <p>Hope this clears something up.</p>
+                <p>Yours,</p>
+                <p>Alex.</p>
+              </div>
+
+              <!-- <button type="button" name="button" onclick="init()">INIT</button>
+              <ul id="data">
+                  <li>
+                      <h2>Row 1</h2>
+                      <p>Some text here</p>
+                  </li>
+                  <li>
+                      <h2>Row 2</h2>
+                      <p>Some text here</p>
+                  </li>
+                  <li>
+                      <h2>Row 3</h2>
+                      <p>Some text here</p>
+                  </li>
+              </ul> -->
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="cv" id="cv">
+        <h3>CV</h3>
+        <div class="life-gantt-chart">
+          <div class="big-table" id="big-table">
+            <table>
+              <tr>
+                <th>YEAR</th>
+                <th>Education</th>
+                <th>Education</th>
+                <th>this seemed like a good idea</th>
+                <th>help</th>
+                <th>more</th>
+              </tr>
+
+              <tr>
+                <th rowspan="2">2020</th>
+                <tr>
+                  <td rowspan="4" class="education">
+                    <h4>Durham University</h4>
+                    <span class="popuptext" id="uni">
+                      <p>Computer Science student, hoping for the best and trying my best.</p>
+                    </span>
+                  </td>
+                  <td rowspan="2" class="extra">
+                    <h4>President of Durham Sewing Society</h4>
+                    <span class="popuptext" id="sew">
+                      <p>Sewing is one of my hobbies, and I am trying to make it
+                      interesting and fun for other people as well.</p>
+                    </span>
+                  </td>
+                  <td rowspan="3" class="extra">
+                    <h4>Volunteering at Oxfam</h4>
+                    <span class="popuptext" id="oxfam">
+                      <p>Because I can and it's for a good cause.</p>
+                    </span>
+                  </td>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2019</th>
+                <tr>
+                  <td rowspan="2" class=" extra">
+                    <h4>Course rep</h4>
+                    <span class="popuptext" id="courserep">
+                      <p>I was a course representative in my first year of studying,
+                      a truly interesting experience.</p>
+                    </span>
+                  </td>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2018</th>
+                <tr>
+                  <td rowspan="2" class="education">
+                    <h4>Durham ISC Foundation year</h4>
+                    <span class=popuptext id="foundation">
+                      <p>I had to do a foundation year because of the difference between school
+                      education system in Russia (where I lived until I was 18) and England.
+                    </p>
+                    </span>
+                  </td>
+                  <td rowspan="2" class="work">
+                    <h4>Fast food worker</h4>
+                    <span class="popuptext" id="fastfood">
+                      <p>Taught me a lot, but I really hope I won't have to do this again.</p>
+                    </span>
+                  </td>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2017</th>
+                <tr>
+                  <td rowspan="22" class="education">
+                    <h4>School</h4>
+                    <span class="popuptext" id="school">
+                      <p>Years of achieving good grades, socializing and choosing different classes,
+                      because nobody tells school students that only the last 2-3 years of marks actually matter.
+                      In retrospective, I would have spent much more time on hobbies and teenage activities.</p>
+                    </span>
+                  </td>
+                  <td rowspan="2" class="education">
+                    <h4>FMSH</h4>
+                    <span class="popuptext" id="fmsh">
+                      <p>Last year of school I attended extra maths and physics classes at
+                      Moscow Aviation Institute. </p>
+                    </span>
+                  </td>
+                  <td rowspan="6" class="education">
+                    <h4>Study English</h4>
+                    <span class="popuptext" id="english">
+                      <p>Spent a couple of years learning English, which proved to be quite
+                        useful if one wants to be able to study in England.</p>
+                    </span>
+                  </td>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2016</th>
+                <tr>
+                  <td rowspan="2" class="work">
+                    <h4>Event Assistant</h4>
+                    <span class="popuptext" id="eventassist">
+                      <p>I was working part-time, helping in organisation of festivals and other
+                      public events.</p>
+                    </span>
+                  </td>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2015</th>
+                <tr>
+                  <td rowspan="10" class="education">
+                    <h4>Music School</h4>
+                    <span class="popuptext" id="musicschool">
+                      <p>I graduated a part-time music school with a diploma in
+                      specialty "synthesizer". Still wondering why.</p>
+                    </span>
+                  </td>
+                  <td rowspan="8" class="education">
+                    <h4>Study German</h4>
+                    <span class="popuptext" id="german">
+                      <p>I learned German for a while, at some point was fluent and now
+                      I have to make some effort due to zero practice (no one to speak in German with). </p>
+                    </span>
+                  </td>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2014</th>
+                <tr>
+                  <td rowspan="2" class="extra">
+                    <h4>Maths classes for children</h4>
+                    <span class="popuptext" id="mathclass">
+                      <p>Taught some extra maths classes in my school for children (7-11 years old).
+                      </p>
+                    </span>
+                  </td>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2013</th>
+                <tr>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2012</th>
+                <tr>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2011</th>
+                <tr>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2010</th>
+                <tr>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2009</th>
+                <tr>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2008</th>
+                <tr>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2007</th>
+                <tr>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2006</th>
+                <tr>
+                  <td rowspan="2" class="education">
+                    <h4>Preschool</h4>
+                    <span class="popuptext" id="preschool">
+                      <p>Was too young to go to school yet, <br>
+                      but it was decided that i have to start <br>
+                      studying at least something. </p>
+                    </span>
+                  </td>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2005</th>
+                <tr>
+                  <td rowspan="12" class="education">
+                    <h4>Street Smarts</h4>
+                    <span class="popuptext" id="streetsmarts">
+                      <p>Good times, hard times...</p>
+                    </span>
+                  </td>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2004</th>
+                <tr>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2003</th>
+                <tr>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2002</th>
+                <tr>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2001</th>
+                <tr>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">2000</th>
+                <tr>
+                </tr>
+              </tr>
+              <tr>
+                <th rowspan="2">1999</th>
+                <tr>
+                </tr>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <table>
+          <tr>
+            <td>
+              <!-- <div id="stage">
+                <img src="Monster1.0.png" width="210" height="300">
+                <img src="Monster2.0.png" width="210" height="300">
+                <img src="Monster3.png" width="210" height="300">
+                <img src="Monster4.png"width="210" height="300">
+              </div> -->
+            </td>
+            <td>
+              <p>yo</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="hobby" id="hobby">
+        <h3>hobby</h3>
+        <table>
+          <tr>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+          </tr>
+        </table>
+      </div>
+      <div class="contacts" id="contacts">
+        <h3>contacts</h3>
+        <table>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+        </table>
+      </div>
+
     </div>
+
+
+    <script src="index.js"></script>
 
   </body>
 </html>
