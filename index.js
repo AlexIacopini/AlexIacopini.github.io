@@ -55,22 +55,24 @@ Array.from(document.getElementsByClassName("extra")).forEach(
     });
   });
 
-// var bodyRect = document.getElementById("container").getBoundingClientRect();
-// var d_x = bodyRect.right;
-// var d_y = bodyRect.bottom;
-var yo=document.getElementById("container");
-var d_x = yo.offsetWidth;
-var d_y = yo.offsetHeight;
+function getCoordinates(){
+  var yo=document.getElementById("container");
+  var d_x = yo.offsetWidth;
+  var d_y = yo.offsetHeight
+  return [d_x, d_y]
+}
+
 
 
 class Whale{
   constructor(name){
+
     this.name=name;
     this.el=document.getElementById(this.name);
     this.x=parseInt(this.el.style.left);
     this.y=parseInt(this.el.style.top);
-    this.docX=d_x;
-    this.docY=d_y;
+    this.docX=getCoordinates()[0];
+    this.docY=getCoordinates()[1];
     this.cx = 3;
     this.cy= 2;
   }
@@ -97,7 +99,7 @@ class Whale{
     var el = document.getElementById(this.name)
     el.style.left = this.x + 'px';
     el.style.top = this.y + 'px';
-    setTimeout(link, 30, this.name); //don't know how to reference
+    setTimeout(link, 30, this.name);
   }
 }
 

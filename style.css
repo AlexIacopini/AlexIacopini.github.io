@@ -103,13 +103,14 @@ h3{
 .message{
   text-align: left;
   background-color: #f7fafc;
-  border: 3px solid black;
+  border: 3px solid #faf7fc;
   border-radius: 50px;
-  box-shadow: 0px 3px 15px 1px #545454;
+  box-shadow: 0px 3px 15px 1px #cccccc;
 }
 
 .cv{
   background-color: #f5edeb;
+  /* background-color: #fcf7f7; */
   padding: 15px;
 }
 
