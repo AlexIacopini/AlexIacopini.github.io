@@ -28,23 +28,23 @@
   }, false);
 
 
-Array.from(document.getElementsByClassName("education")).forEach(
-  function(element, index, array) {
-    element.addEventListener('click',function(){
-      var name1=element.getElementsByTagName("span")[0].id;
-      document.getElementById(name1).classList.toggle("show");
-      element.classList.toggle("change");
-    });
-  });
-
-Array.from(document.getElementsByClassName("work")).forEach(
-  function(element, index, array) {
-    element.addEventListener('click',function(){
-      var name1=element.getElementsByTagName("span")[0].id;
-      document.getElementById(name1).classList.toggle("show");
-      element.classList.toggle("change");
-    });
-  });
+// Array.from(document.getElementsByClassName("education")).forEach(
+//   function(element, index, array) {
+//     element.addEventListener('click',function(){
+//       var name1=element.getElementsByTagName("span")[0].id;
+//       document.getElementById(name1).classList.toggle("show");
+//       element.classList.toggle("change");
+//     });
+//   });
+//
+// Array.from(document.getElementsByClassName("work")).forEach(
+//   function(element, index, array) {
+//     element.addEventListener('click',function(){
+//       var name1=element.getElementsByTagName("span")[0].id;
+//       document.getElementById(name1).classList.toggle("show");
+//       element.classList.toggle("change");
+//     });
+//   });
 
 Array.from(document.getElementsByClassName("extra")).forEach(
   function(element, index, array) {
