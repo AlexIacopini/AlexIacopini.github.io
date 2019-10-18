@@ -14,12 +14,10 @@ h3{
 
 .header{
   /* background-color: #eef7fa; */
-  background-color: #afc7bf;
-
-
-
-
+  /* background-color: #afc7bf; */
+  background-color: #edf8fa;
   padding: 20px;
+
 }
 /* #header1{
   width: 70%;
@@ -56,8 +54,9 @@ h3{
 
 } */
 .navbar{
-  /* background-color: #c2a59f; */
   background-color: #9fbcc2;
+  /* background-color: #dde7f5; */
+
   border-radius: 2px;
   box-shadow: 0px 1px 6px 1px #696969;
   position: -webkit-sticky;
@@ -94,7 +93,8 @@ h3{
 }
 
 .welcome{
-  background-color: #f7f7fc;
+  /* background-color: #fbfcfc; */
+  background-color: #fdffff;
   padding: 15px;
 }
 #welcome tr,td{
@@ -112,8 +112,10 @@ h3{
 }
 
 .cv{
-  background-color: #f5edeb;
-  /* background-color: #fcf7f7; */
+  /* background-color: #f5edeb; */
+  /* background-color: #f5f6f7; */
+  background-color: #f7fafc;
+
   padding: 15px;
 }
 
@@ -141,7 +143,6 @@ h3{
   width: 10%;
 }
 #big-table th{
-  /* background-color: yellow; */
   width: 5%;
   height: 10%;
   padding: 5px;
@@ -149,13 +150,15 @@ h3{
 
 
 .style1{
-  background-color: #c7cfc0;
+  /* background-color: #c7cfc0; */
+  background-color: #f8effb;
 }
 .style2{
-  background-color: #fcf6ee;
+  background-color: #ecf5f9;
 }
 .style3{
-  background-color: #afc7bf;
+  background-color: #f2f2fa;
+
 }
 
 
@@ -198,7 +201,9 @@ h3{
   background-color: #81aeb8;
 }
 .hobby{
-  background-color: #f7f7fc;
+  /* background-color: #f7f7fc; */
+  /* background-color: #f8effb; */
+  background-color: #fbffff;
   padding: 15px;
 }
 #hobby table{
@@ -210,8 +215,8 @@ h3{
 }
 
 .contacts{
-  /* background-color: #afc7bf; */
   background-color: #9fbcc2;
+  /* background-color: #dde7f5; */
   padding: 15px;
 }
 #contacts table{
