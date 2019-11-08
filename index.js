@@ -12,6 +12,9 @@
 //
 // }, false);
 
+var img=document.createElement("img");
+img.src="/pic/flowers1.png";
+document.getElementById("cell").appendChild(img);
 
   window.addEventListener("DOMContentLoaded", function(e) {
     var list = Array.from(document.getElementsByClassName("stage"));
@@ -71,13 +74,9 @@ class Whale{
     this.cy= 2;
   }
   move(){
-    // var d2x = (Math.random() * delta - delta/2); //change dx and dy by random value
-    // var d2y = (Math.random() * delta - delta/2);
-    // cx += d2x;
-    // cy += d2y;
-
     if(this.x<0 || this.x > (this.docX-120)){
       this.cx=-this.cx;
+      document.getElementById(this.name).classList.toggle("turn");
     }else{
       this.cx=this.cx;
     }
@@ -90,7 +89,7 @@ class Whale{
     this.y += this.cy;
 
 
-    var el = document.getElementById(this.name)
+    var el = document.getElementById(this.name);
     el.style.left = this.x + 'px';
     el.style.top = this.y + 'px';
     setTimeout(link, 30, this.name);
@@ -110,9 +109,3 @@ whale2.move();
 
 whale3= new Whale("whale3");
 whale3.move();
-
-whale4= new Whale("whale4");
-whale4.move();
-
-whale5=new Whale("whale5");
-whale5.move();

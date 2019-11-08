@@ -3,50 +3,35 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="index.js"></script> -->
     <title>Alex</title>
   </head>
   <body>
     <div class="container" id="container">
-      <div class="header style3" id="header">
+      <div class="header" id="header">
         <table>
           <tr>
             <td id="header1">
-              <h1>Hello</h1>
-        <div id="whale1" style="position:absolute; left:400px; top:100px;">
-          <div class="stage">
-            <img src="Whale1.png" width="100" height="60">
-            <img src="Whale2.png"width="100" height="60">
-          </div>
-        </div>
-        <div id="whale2" style="position:absolute; left:600px; top:1000px;">
-          <div class="stage">
-            <img src="Whale1.png" width="100" height="60">
-            <img src="Whale2.png"width="100" height="60">
-          </div>
-        </div>
-        <div id="whale3" style="position:absolute; left:800px; top:1500px;">
-          <div class="stage">
-            <img src="Whale1.png" width="100" height="60">
-            <img src="Whale2.png"width="100" height="60">
-          </div>
-        </div>
-        <div id="whale4" style="position:absolute; left:100px; top:100px;">
-          <div class="stage">
-            <img src="Whale1.png" width="100" height="60">
-            <img src="Whale2.png"width="100" height="60">
-          </div>
-        </div>
-        <div id="whale5" style="position:absolute; left:100px; top:2000px;">
-          <div class="stage">
-            <img src="Whale1.png" width="100" height="60">
-            <img src="Whale2.png"width="100" height="60">
-          </div>
-        </div>
-
+              <div id="whale1" style="position:absolute; left:100px; top:100px;">
+                <div class="stage">
+                  <img src="/pic/Whale1.png" width="120" height="80">
+                  <img src="/pic/Whale2.png"width="120" height="80">
+                </div>
+              </div>
+              <div id="whale2" style="position:absolute; left:150px; top:1000px;">
+                <div class="stage">
+                  <img src="/pic/Whale1.png" width="110" height="70">
+                  <img src="/pic/Whale2.png"width="110" height="70">
+                </div>
+              </div>
+              <div id="whale3" style="position:absolute; left:20px; top:1500px;">
+                <div class="stage">
+                  <img src="/pic/Whale1.png" width="100" height="60">
+                  <img src="/pic/Whale2.png"width="100" height="60">
+                </div>
+              </div>
             </td>
             <td class="animation" id="header2">
-              <img src="Whale1.png" width="300px" height="350px" alt="plant">
+              <img src="/pic/yellowish.jpg" width="300px" height="350px" alt="plant">
             </td>
           </tr>
         </table>
@@ -61,23 +46,15 @@
 
       </div>
       <div class="welcome" id="welcome">
-        <h3>welcome</h3>
+        <h3>Welcome</h3>
         <table>
           <tr>
-            <td>
-              <div>
-                <p>•	Teamwork
-                •	Customer service
-                •	Time-management
-                •	Greeting and meeting customers
-                •	Assistance to speakers
-                •	Event administration
-                •	Information distribution</p>
-
+            <td id="welcome1">
+              <div class="picture">
+                <img src="/pic/flower.jpg" width="300px" height="400px" alt="plant">
               </div>
-              <img src="Whale1.png" width="200px" height="300px" alt="plant">
             </td>
-            <td class="message">
+            <td class="message" id="welcome2">
               <div>
                 <p>Hi there!</p>
                 <p>If you are reading this, it means that I either:</p>
@@ -85,10 +62,11 @@
                   <li>Added this link to my job application</li>
                   <li>Just met you and told you something like "You don't know who I am?
                     Google it. It's A-L-E-...."</li>
-                  <li>Told you about it as you are my friend already</li>
+                  <li>Told you about this as you are my friend already</li>
+                  <li>Did nothing and you are stalking me (In which case - congrats! You found the gold mine of information. Also, stop it!)</li>
                 </ul>
                 <p>In any case, this website is just a brief backstory of who you are
-                dealing with, so that we are on the same page. It is a variation of a Gannt Chart,
+                dealing with, so that we are on the same page. It is a variation of a Gantt Chart,
                 showing approximately what I was doing in different years.</p>
                 <p>Hope this clears something up.</p>
                 <p>Yours,</p>
@@ -100,7 +78,7 @@
       </div>
       <div class="cv" id="cv">
         <h3>CV</h3>
-        <div class="life-gantt-chart">
+        <div class="life" id="life">
           <div class="big-table" id="big-table">
             <table>
               <tr>
@@ -118,7 +96,7 @@
                   <td rowspan="4" class=" extra style2">
                     <h4>Durham University</h4>
                     <span class="popuptext" id="uni">
-                      <p>Computer Science student, hoping for the best and trying my best.</p>
+                      <p>Computer Science student, currently second year.</p>
                     </span>
                   </td>
                   <td rowspan="2" class="extra style2">
@@ -132,6 +110,12 @@
                     <h4>Volunteering at Oxfam</h4>
                     <span class="popuptext" id="oxfam">
                       <p>Because I can and it's for a good cause.</p>
+                    </span>
+                  </td>
+                  <td rowspan="2" class="extra style2">
+                    <h4>Bar 33</h4>
+                    <span class="popuptext" id="bar33">
+                      <p>Part-time worker as a bartender.</p>
                     </span>
                   </td>
                 </tr>
@@ -162,7 +146,12 @@
                   <td rowspan="2" class=" extra style1">
                     <h4>Fast food worker</h4>
                     <span class="popuptext" id="fastfood">
-                      <p>Taught me a lot, but I really hope I won't have to do this again.</p>
+                      <p>Skills aquired:</p>
+                      <ul>
+                        <li>Teamwork</li>
+                        <li>Problem solving</li>
+                        <li>Decision making</li>
+                      </ul>
                     </span>
                   </td>
                 </tr>
@@ -260,6 +249,11 @@
               <tr>
                 <th rowspan="2">2009</th>
                 <tr>
+                  <td  rowspan="20"colspan="3">
+                    <div id="cell">
+
+                    </div>
+                  </td>
                 </tr>
               </tr>
               <tr>
@@ -327,6 +321,11 @@
                 </tr>
               </tr>
             </table>
+            <!-- <div class="picture" id="img-cell">
+
+            </div> -->
+            <!-- <img src="/pic/flowers.jpg" width="300px" height="200px" alt="plant"> -->
+
           </div>
         </div>
       </div>
@@ -343,6 +342,9 @@
           </tr>
           <tr>
             <td><p><i>Playing Ukulele</i></p></td>
+            <td>
+
+            </td>
           </tr>
         </table>
       </div>
