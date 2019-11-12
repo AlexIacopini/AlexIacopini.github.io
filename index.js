@@ -1,9 +1,15 @@
 
 window.addEventListener("DOMContentLoaded", function(e) {
+  // puts the picture into the table (cv)
   var img=document.createElement("img");
   img.src="/pic/flowers1.png";
   document.getElementById("cell").appendChild(img);
 
+  var img1=document.createElement("img");
+  img1.src="/pic/head1.png";
+  document.getElementById("header").appendChild(img1);
+
+// whale tail change
   Array.from(document.getElementsByClassName("stage")).forEach(
     function(element){
       var fadeComplete = function(e) { element.appendChild(arr[0]); };
@@ -57,7 +63,7 @@ function getCoordinates(){
 }
 
 
-
+// whale creation and movement
 class Whale{
   constructor(name){
 
@@ -71,13 +77,13 @@ class Whale{
     this.cy= 2;
   }
   move(){
-    if(this.x<0 || this.x > (this.docX-120)){
+    if(this.x<0 || this.x > (this.docX-140)){
       this.cx=-this.cx;
       document.getElementById(this.name).classList.toggle("turn");
     }else{
       this.cx=this.cx;
     }
-    if(this.y<0 || this.y > (this.docY-120)){
+    if(this.y<0 || this.y > (this.docY-130)){
       this.cy=-this.cy;
     }else{
       this.cy=this.cy;

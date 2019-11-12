@@ -10,20 +10,37 @@ h3{
   font-size: 25px;
 }
 
+/* Header section */
+
 .header{
   background-color: #2e4d43;
-  padding: 20px;
+  position: relative;
+  color: #ddd6d3;
+}
+.header img{
+  height: auto;
+  width: 100%;
+}
+.head-table{
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
 
 }
+
+
 #header1{
   width: 50%;
 }
 #header2{
-  width: 30%;
+  width: 40%;
 }
-.animation{
-  align-items: right;
 
+/* Header animation pulse */
+
+.animation{
+  align-items: center;
   animation-name: pulse;
   animation-duration: 5s;
   animation-timing-function: ease-out;
@@ -36,103 +53,18 @@ h3{
 
 @keyframes pulse {
   0%{
-    transform: scale(.1);
+    transform: scale(.9);
   }
 }
 
 .animation img{
   height: auto;
-  width: 50%;
+  width: 70%;
   border-radius: 60%;
   border: 2px solid #718879;
 }
 
-.navbar{
-  /* background-color: #9fbcc2; */
-  background-color: #718879;
-  border-radius: 2px;
-  box-shadow: 0px 1px 6px 1px #696969;
-  position: -webkit-sticky;
-  position: sticky;
-  top:0;
-  right:0;
-  z-index: 500;
-}
-#navbar ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-#navbar li{
-  float: left;
-  padding: 10px 20px;
-}
-#navbar li a{
-  display: block;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-#navbar li a:hover{
-  background-color: #2e4d43;
-  color: white;
-  border-radius: 5px;
-}
-#navbar a{
-  font-weight: bold;
-  font-size: 20px;
-  font-style: normal;
-}
-
-.welcome{
-  background-color: #fff;
-  padding: 15px;
-  color: #1b2e28;
-}
-#welcome tr,td{
-  width: 50%;
-  height: 100%;
-  padding: 20px;
-  text-align: center;
-}
-#welcome1{
-  width: 30%;
-}
-#welcome2{
-  width: 60%;
-}
-.message{
-  text-align: left;
-  font-size: 18px;
-  background-color: #fdfbfb;
-  border: 3px solid #fdfbfb;
-  border-radius: 50px;
-  box-shadow: 0px 3px 15px 1px #2e4d43;
-}
-
-.picture img{
-  height: auto;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: -10px 10px #2e4d43;
-}
-
-#cell img{
-  height: auto;
-  width: 100%;
-  position: relative;
-  box-shadow: 0px 10px 0px 0px #2e4d43;
-}
-#cell{
-  text-align: right;
-}
-
-.cv{
-  background-color: #f8ecec;
-  padding: 15px;
-  color: #1b2e28;
-}
+/* Whale animation */
 
 .stage img:nth-of-type(1) {
   position: relative;
@@ -157,33 +89,125 @@ h3{
   transform: scaleX(-1);
 }
 
+/* Navbar section */
 
-#big-table td{
+.navbar{
+  /* background-color: #718879; */
+  background-color: #2e4d43;
+
+  border-radius: 2px;
+  box-shadow: 0px 1px 6px 1px #696969;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  right:0;
+  z-index: 500;
+}
+.navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.navbar li{
+  float: left;
+  padding: 10px 20px;
+}
+.navbar li a{
+  display: block;
+  /* color: #fff; */
+  color: #ddd6d3;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.navbar li a:hover{
+  background-color: #2e4d43;
+  color: white;
+  border-radius: 5px;
+}
+.navbar a{
+  font-weight: bold;
+  font-size: 20px;
+  font-style: normal;
+}
+
+/* Welcome section */
+
+.welcome{
+  background-color: #fff;
+  padding: 15px;
+  color: #1b2e28;
+}
+.welcome tr,td{
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+#welcome1{
+  width: 30%;
+}
+#welcome2{
+  width: 60%;
+}
+.message{
+  text-align: left;
+  font-size: 18px;
+  /* background-color: #fdfbfb; */
+  border: 3px solid #fdfbfb;
+  border-radius: 2px;
+  box-shadow: 0px 3px 15px 1px #2e4d43;
+}
+
+.picture img{
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: -10px 10px #2e4d43;
+}
+
+/* CV section */
+
+.cv{
+  background-color: #f8ecec;
+  padding: 15px;
+  color: #1b2e28;
+}
+
+/* Table attributes */
+
+.big-table td{
   height: 10%;
   width: 10%;
 }
-#big-table th{
+.big-table th{
   width: 5%;
   height: 10%;
   padding: 5px;
 }
 
+#cell img{
+  height: auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 10px 0px 0px #2e4d43;
+}
+#cell{
+  text-align: right;
+}
 
 
 .style1{
-  /* background-color: #f8effb; */
   background-color: #fdf9f9;
 }
 .style2{
-  /* background-color: #fdf9f9; */
   background-color: #ecf8f8;
 }
 .style3{
-  /* background-color: #f2f2fa; */
   background-color: #d5dbd9;
 }
 
-
+/* Popup animation */
 
 .extra{
   cursor: pointer;
@@ -219,29 +243,32 @@ h3{
   visibility: visible;
 }
 
+/* Hobby section */
+
 .hobby{
   background-color: #ffffff;
   padding: 15px;
   color: #1b2e28;
 }
-#hobby table{
+.hobby table{
   border-collapse: collapse;
 }
-#hobby td{
+.hobby td{
   border: 3px solid #2e4d43;
   border-style: solid none solid none;
 }
 
+/* Contacts section */
+
 .contacts{
-  /* background-color: #9fbcc2; */
   background-color: #2e4d43;
   padding: 15px;
   color: #ddd6d3;
 }
-#contacts table{
+.contacts table{
   border-collapse: collapse;
 }
-#contacts td{
+.contacts td{
   width: 33%;
   border: 3px solid #ddd6d3;
   border-style: none dashed none dashed;
