@@ -6,11 +6,9 @@ table{
   border-collapse: separate;
 }
 h3{
-  font-family: "Comic Sans", cursive;
   font-style: italic;
   font-size: 25px;
 }
-
 
 .header{
   background-color: #2e4d43;
@@ -18,7 +16,7 @@ h3{
 
 }
 #header1{
-  width: 60%;
+  width: 50%;
 }
 #header2{
   width: 30%;
@@ -43,7 +41,10 @@ h3{
 }
 
 .animation img{
+  height: auto;
+  width: 50%;
   border-radius: 60%;
+  border: 2px solid #718879;
 }
 
 .navbar{
@@ -69,19 +70,19 @@ h3{
 }
 #navbar li a{
   display: block;
-  color: #000;
+  color: #fff;
   padding: 10px 20px;
   text-decoration: none;
 }
 #navbar li a:hover{
-  background-color: #555;
+  background-color: #2e4d43;
   color: white;
+  border-radius: 5px;
 }
 #navbar a{
   font-weight: bold;
   font-size: 20px;
   font-style: normal;
-  font-family: "Comic Sans", cursive;
 }
 
 .welcome{
@@ -111,15 +112,17 @@ h3{
 }
 
 .picture img{
+  height: auto;
+  width: 100%;
   border-radius: 5px;
   box-shadow: -10px 10px #2e4d43;
 }
 
 #cell img{
-  height: 400px;
-  width: 600px;
+  height: auto;
+  width: 100%;
   position: relative;
-  box-shadow: 0px 10px #2e4d43;
+  box-shadow: 0px 10px 0px 0px #2e4d43;
 }
 #cell{
   text-align: right;
@@ -196,7 +199,7 @@ h3{
   width: 160px;
   background-color: #2e4d43;
   color: #fff;
-  text-align: center;
+  text-align: left;
   border-radius: 3px;
   padding: 10px;
   position: absolute;
@@ -215,7 +218,6 @@ h3{
 .extra .show {
   visibility: visible;
 }
-
 
 .hobby{
   background-color: #ffffff;

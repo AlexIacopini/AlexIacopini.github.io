@@ -1,56 +1,53 @@
 
+window.addEventListener("DOMContentLoaded", function(e) {
+  var img=document.createElement("img");
+  img.src="/pic/flowers1.png";
+  document.getElementById("cell").appendChild(img);
 
-// Original JavaScript code by Chirp Internet: www.chirp.com.au
-// window.addEventListener("DOMContentLoaded", function(e) {
-//
-//   var stage = document.getElementById("stage");
-//   var fadeComplete = function(e) { stage.appendChild(arr[0]); };
-//   var arr = stage.getElementsByTagName("a");
-//   for(var i=0; i < arr.length; i++) {
-//     arr[i].addEventListener("animationend", fadeComplete, false);
-//   }
-//
-// }, false);
-
-var img=document.createElement("img");
-img.src="/pic/flowers1.png";
-document.getElementById("cell").appendChild(img);
-
-  window.addEventListener("DOMContentLoaded", function(e) {
-    var list = Array.from(document.getElementsByClassName("stage"));
-    var stage=list[0];
-    list.forEach(
-      function(element){
-        var fadeComplete = function(e) { element.appendChild(arr[0]); };
-        var arr = element.getElementsByTagName("img");
-        for(var i=0; i < arr.length; i++) {
-          arr[i].addEventListener("animationend", fadeComplete, false);
-        }
+  Array.from(document.getElementsByClassName("stage")).forEach(
+    function(element){
+      var fadeComplete = function(e) { element.appendChild(arr[0]); };
+      var arr = element.getElementsByTagName("img");
+      for(var i=0; i < arr.length; i++) {
+        arr[i].addEventListener("animationend", fadeComplete, false);
       }
-    )
-  }, false);
+    }
+  )
+}, false);
 
 
 Array.from(document.getElementsByClassName("extra")).forEach(
   function(element, index, array) {
     element.addEventListener('click',function(){
       Array.from(document.getElementsByClassName("show")).forEach(
-        function(e,i,a){
+        function close(e,i,a){
           e.classList.toggle("show");
         }
       )
-      Array.from(document.getElementsByClassName("change")).forEach(
-        function(e,i,a){
-          e.classList.toggle("change");
-        }
-      )
+
+      // setTimeout(change,4000);
+
+      // change();
 
       var name1=element.getElementsByTagName("span")[0].id;
       document.getElementById(name1).classList.toggle("show");
-      element.classList.toggle("change");
+
+      // setTimeout(function(){
+      //         document.getElementById(name1).classList.toggle("show");
+      // },6000);
+
 
     });
   });
+
+
+// function change(){
+//   Array.from(document.getElementsByClassName("show")).forEach(
+//     function close(e,i,a){
+//       e.classList.toggle("show");
+//     }
+//   )
+// }
 
 function getCoordinates(){
   var yo=document.getElementById("container");
