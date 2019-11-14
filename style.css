@@ -137,7 +137,7 @@ h3{
 
 .welcome{
   background-color: #fff;
-  padding: 15px;
+  padding: 30px;
   color: #1b2e28;
 }
 .welcome tr,td{
@@ -164,7 +164,7 @@ h3{
 .message{
   padding: 20px;
   text-align: left;
-  font-size: 15px;
+  /* font-size: 15px; */
   background-color: #fff;
   /* border: 3px solid black; */
   border-radius: 2px;
