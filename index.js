@@ -5,9 +5,9 @@ window.addEventListener("DOMContentLoaded", function(e) {
   img.src="/pic/flowers1.png";
   document.getElementById("cell").appendChild(img);
 
-  var img1=document.createElement("img");
-  img1.src="/pic/head1.png";
-  document.getElementById("header").appendChild(img1);
+  // var img1=document.createElement("img");
+  // img1.src="/pic/head1.png";
+  // document.getElementById("header").appendChild(img1);
 
 // whale tail change
   Array.from(document.getElementsByClassName("stage")).forEach(
@@ -19,41 +19,42 @@ window.addEventListener("DOMContentLoaded", function(e) {
       }
     }
   )
+
+  // setInterval(change,10000);
+
 }, false);
 
-
+// show popuptext
 Array.from(document.getElementsByClassName("extra")).forEach(
-  function(element, index, array) {
+  function(element) {
     element.addEventListener('click',function(){
-      Array.from(document.getElementsByClassName("show")).forEach(
-        function close(e,i,a){
-          e.classList.toggle("show");
-        }
-      )
+      // Array.from(document.getElementsByClassName("show")).forEach(
+      //   function close(e,i,a){
+      //     e.classList.toggle("show");
+      //   }
+      // )
 
       // setTimeout(change,4000);
 
-      // change();
+      change();
 
       var name1=element.getElementsByTagName("span")[0].id;
       document.getElementById(name1).classList.toggle("show");
-
-      // setTimeout(function(){
-      //         document.getElementById(name1).classList.toggle("show");
-      // },6000);
-
-
     });
+    element.addEventListener("animationend", function(){
+      change();
+    })
   });
 
 
-// function change(){
-//   Array.from(document.getElementsByClassName("show")).forEach(
-//     function close(e,i,a){
-//       e.classList.toggle("show");
-//     }
-//   )
-// }
+function change(){
+  Array.from(document.getElementsByClassName("show")).forEach(
+    function close(e,i,a){
+      e.classList.toggle("show");
+    }
+  )
+}
+
 
 function getCoordinates(){
   var yo=document.getElementById("container");
